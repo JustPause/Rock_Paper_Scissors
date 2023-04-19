@@ -35,16 +35,22 @@
 
                             if (Input1Player == Choses[RandomInt - 1])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Gray;
                                 System.Console.WriteLine("GG. Is a Draw");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                             }
                             else if (Input1Player == Choses[RandomInt])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Green;
                                 System.Console.WriteLine("Player wins!!");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                                 Score1++;
                             }
                             else if (Input1Player == Choses[RandomInt + 1])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Red;
                                 System.Console.WriteLine("AI wins!!");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                                 Score2++;
                             }
                             System.Console.WriteLine("Player = {0}, AI = {1}", Score1, Score2);
@@ -57,16 +63,22 @@
 
                             if (Input1Player == Choses[RandomInt - 1])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Gray;
                                 System.Console.WriteLine("GG. Is a Draw");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                             }
                             else if (Input1Player == Choses[RandomInt])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Green;
                                 System.Console.WriteLine("Player wins!!");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                                 Score1++;
                             }
                             else if (Input1Player == Choses[RandomInt - 2])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Red;
                                 System.Console.WriteLine("AI wins!!");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                                 Score2++;
                             }
                             System.Console.WriteLine("Player = {0}, AI = {1}", Score1, Score2);
@@ -80,16 +92,22 @@
 
                             if (Input1Player == Choses[RandomInt - 1])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Gray;
                                 System.Console.WriteLine("GG. Is a Draw");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                             }
                             else if (Input1Player == Choses[RandomInt - 3])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Green;
                                 System.Console.WriteLine("Player wins!!");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                                 Score1++;
                             }
                             else if (Input1Player == Choses[RandomInt - 2])
                             {
+                                System.Console.ForegroundColor = System.ConsoleColor.Red;
                                 System.Console.WriteLine("AI wins!!");
+                                System.Console.ForegroundColor = System.ConsoleColor.White;
                                 Score2++;
                             }
                             System.Console.WriteLine("Player = {0}, AI = {1}", Score1, Score2);
@@ -102,11 +120,15 @@
                 }
                 if (Score1 == 3)
                 {
+                    System.Console.ForegroundColor = System.ConsoleColor.Green;
                     System.Console.WriteLine("Player has won. Nice");
+                    System.Console.ForegroundColor = System.ConsoleColor.White;
                 }
                 else if (Score2 == 3)
                 {
-                    System.Console.WriteLine("AI has won. Bad");
+                    System.Console.ForegroundColor = System.ConsoleColor.Red;
+                    System.Console.WriteLine("AI has won. Not good");
+                    System.Console.ForegroundColor = System.ConsoleColor.White;
                 }
                 else
                 {
