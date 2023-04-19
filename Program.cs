@@ -9,7 +9,7 @@
             int Score1 = 0;
             int Score2 = 0;
 
-            System.Console.Write("Choose, A move. Rock: Paper: Scissors:       ");
+            System.Console.Write("Choose, A move. Rock || Paper || Scissors: ");
             Input1Player = Console.ReadLine();
             Input1Player = Input1Player.ToUpper();
 
@@ -17,14 +17,16 @@
 
             RandomInt = GetRand.Next(1, 4);
 
-            string[] Choses = new string[] { "ROCK", "PAPER", "SCISSORS"};
+            string[] Choses = new string[] { "ROCK", "PAPER", "SCISSORS" };
+
+
 
             switch (RandomInt)
             {
                 case 1:
                     Input2Player = Choses[RandomInt - 1];
 
-                    System.Console.WriteLine("The AI has chosen a {Choses[RandomInt - 1]}");
+                    System.Console.WriteLine("The AI has chosen a {0}", Choses[RandomInt - 1]);
 
                     if (Input1Player == Choses[RandomInt - 1])
                     {
@@ -45,7 +47,7 @@
                 case 2:
                     Input2Player = Choses[RandomInt - 1];
 
-                    System.Console.WriteLine("The AI has chosen a {Choses[RandomInt - 1]}");
+                    System.Console.WriteLine("The AI has chosen a {0}", Choses[RandomInt - 1]);
 
                     if (Input1Player == Choses[RandomInt - 1])
                     {
@@ -67,7 +69,7 @@
 
                     Input2Player = Choses[RandomInt - 1];
 
-                    System.Console.WriteLine("The AI has chosen a {Choses[RandomInt - 1]}");
+                    System.Console.WriteLine("The AI has chosen a {0}", Choses[RandomInt - 1]);
 
                     if (Input1Player == Choses[RandomInt - 1])
                     {
